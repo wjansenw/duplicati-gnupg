@@ -10,6 +10,7 @@ RUN apt-get update && \
         libmono-system-net-http-webrequest4.0-cil \
         libmono-system-web4.0-cil \
         referenceassemblies-pcl && \
+        gnupg && \
     rm -rf /var/lib/apt/lists && \
     cert-sync /etc/ssl/certs/ca-certificates.crt && \
     # this obsolete cert can mess the certificate chain because of a Mono bug
